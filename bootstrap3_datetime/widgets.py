@@ -49,7 +49,7 @@ class DateTimePicker(DateTimeInput):
 
     js_template = """
     <script>
-      $(function(){
+      waitForDateTimePicker(function(){
         $("#%(picker_id)s:has(input:not([readonly],[disabled]))").datetimepicker(%(options)s);
       });
     </script>"""
